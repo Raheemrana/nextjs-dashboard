@@ -33,7 +33,7 @@ async function seedUsers(client) {
       `;
       }),
     );
-
+    console.log('insertedUsers ->', insertedUsers)
     console.log(`Seeded ${insertedUsers.length} users`);
 
     return {
@@ -171,7 +171,7 @@ async function main() {
   await client.end();
 }
 
-main().catch((err) => {
+main().then(() => "Huurrrraaahhhh!!! Scripts executed Successfully").catch((err) => {
   console.error(
     'An error occurred while attempting to seed the database:',
     err,
