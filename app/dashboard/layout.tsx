@@ -1,5 +1,4 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
-import main from '@/scripts/seed';
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
